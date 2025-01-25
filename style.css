@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+font-family: "Poppins", serif;
+font-size: 12px;
+}
+a{
+text-decoration: none;
+}
+button{
+border: none;
+background: none;
+}
+img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.section{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* goals */
+.goals-section{
+  padding: 30px 15px;
+}
+.goals-h{
+  color: #011E6C;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.goal-icon{
+  background: #f2f4fc;
+  padding: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.goal-icon i{
+  display: inline-block;
+  background: #011E6C;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.goal-content{
+  display: grid;
+  gap: 1rem;
+  padding: 40px 0;
+  position: relative;
+}
+
+.goal-content h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.goal-content h5{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1F2438;
+}
+.goal-content p{
+  font-size: 14px;
+  color: grey;
+}
+.goal-divider{
+  width: 80%;
+  height: .1rem;
+  display: none;
+  background: #011e6c89;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+}
+.goal{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* trump pay */
+.trumpPay-container{
+  background: #011E6C;
+}
+.trumpPay-section{
+  padding: 30px 15px;
+  display: grid;
+  gap: 2rem;
+}
+.trumppay-top{
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: grid;
+  gap: .5rem;
+  padding-bottom: 30px;
+
+}
+.trumppay-top article{
+  text-align: center;
+}
+.trumppay-top >article{
+  justify-self: center;
+}
+.trumppay-top >div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.coin-container{
+  max-width: 80px;
+  margin-bottom: -2rem;
+  transform: skew(10deg);
+}
+.coin-container img{
+  object-fit: contain;
+}
+.trumppay-top h2{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.trumppay-top p{
+  transform: rotateZ(-5deg);
+  font-size: 12px;
+  padding: 10px 5px;
+  color: white;
+  background-color: #FFE53B;
+background-image: linear-gradient(147deg, #ffe53bd0 0%, #ff2525b5 74%);
+
+}
+.trumppay-bottom{
+  font-size: 13px;
+  color: white;
+  display: grid;
+  gap: 1rem;
+}
+.trumppay-bottom h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.trumppay-bottom p{
+  font-weight: 300;
+}
+.trumppay-bottom span{
+  font-weight: 600;
+  font-size: 16px;
+}
+.curve{
+  width: 100%;
+}
+.curve:first-child{
+  margin-bottom: -2px;
+}
+/* offer section */
+.offer-container{
+  background: url('./Assets/building-bg.jpg') center/cover;
+  background-repeat: no-repeat;
+  
+}
+.offer-overlay{
+  background: #fffffff0;
+}
+.offer-section{
+  padding: 15px 30px;
+  display: grid;
+  gap: 1.5rem;
+}
+.offer-content{
+  display: grid;
+  gap: 1.5rem;
+}
+.offer-content h3{
+  font-size: 1.5rem;
+  color: #011E6C;
+  font-weight: 600;
+}
+.offer-content h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+}
+.offer-content h2 span{
+  color: #011E6C;
+  font-weight: 600;
+}
+.offer-content p{
+  font-size: 14px;
+  color: #2c2c2c;
+}
+.create-btn{
+  background: #011E6C;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 25px;
+  max-width: fit-content;
+  cursor: pointer;
+}
+.offer-img{
+  width: 100%;
+}
+.offer-img img{
+  aspect-ratio: 16/9;
+}
+
+/* form */
+.form-container{
+  background: #011E6C;
+}
+.form-section{
+  padding: 30px 15px;
+  color: white;
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  padding-bottom: 0;
+}
+.form-warning{
+  text-align: center;
+font-size: 1.2rem;
+font-weight: 400;
+}
+.registration-form{
+display: grid;
+gap: 1rem;
+padding: 30px;
+background: #202B3F;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+max-width: 400px;
+justify-self: center;
+}
+.registration-form input{
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.registration-form input:focus,.registration-form select:focus{
+  outline: none;
+}
+.register-btn{
+  background: #14A644;
+  padding: 10px 15px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.registration-form fieldset{
+  border: none;
+  background: white;
+  display: flex;
+  border-radius: 10px;
+}
+.registration-form select{
+  border: none;
+  border-radius: 10px;
+}
+@media screen and (min-width:768px) {
+  .goals-section{
+    padding:  40px;
+  }
+  .goal-content{
+    grid-template-columns: repeat(3,1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+  }
+  .goal{
+    flex-direction: column;
+    text-align: center;
+  }
+  .goals-h{
+    font-size: 2rem;
+  }
+  .goal-divider{
+    display: block;
+    z-index: 100;
+  }
+  .goal-icon{
+    padding: 15px;
+    z-index: 200;
+  }
+  .goal-icon i{
+    font-size: 1.5rem;
+  }
+  .trumpPay-section{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 20px 40px;
+  }
+  .trumppay-top{
+    align-self: center;
+  }
+  .trumppay-bottom h3{
+    font-size: 2rem;
+  }
+  .trumppay-bottom{
+    font-size: 15px;
+  }
+  .offer-section{
+    padding: 40px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  .form-section{
+    padding: 40px;
+    padding-bottom: 0;
+  }
+  .form-warning{
+    text-align: left;
+    padding: 30px;
+  }
+  .form-section{
+    display: flex;
+    align-items: center;
+  }
+
+}
